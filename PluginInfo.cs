@@ -6,7 +6,7 @@
 	class PluginInfo
 	{
 		public const string GUID = "com.bjrsinge.gorillatag.GorillaTagLowerModTemplateProject";
-		public const string Name = "CubeForms";
+		public const string Name = "AnnoyingCube";
 		public const string Version = "1.0.0";
 	}
 }
