@@ -36,8 +36,8 @@ namespace GorillaTagModTemplateProject
 			{
 				DestroyCube();
 			}
-			HarmonyPatches.RemoveHarmonyPatches();
-		}
+            HarmonyPatches.RemoveHarmonyPatches();
+        }
 
 		void SetupCube()
 		{
@@ -50,7 +50,14 @@ namespace GorillaTagModTemplateProject
 
 		void DestroyCube()
 		{
-			Destroy(cube);
+			if (cube != null)
+			{
+				Destroy(cube);
+		    }
+			else
+			{
+				Debug.Log("Cube is null. Please try again");
+			}
 		}
 
 		void OnGameInitialized(object sender, EventArgs e)
